@@ -46,13 +46,17 @@ main { min-height: 1200px; }
 }
 
 .topheader a {
-    color: #151515;
+    color: #666;
     text-decoration: none;
+    font-size: 13px;
     border-bottom: 1px solid transparent;
 }
 .topheader a:hover {
     text-decoration: none;
     border-bottom-color: #151515;
+}
+.topheader a i {
+	margin-right: 3px;
 }
 .topheader a:hover i {
     text-decoration: none;
@@ -212,3 +216,25 @@ footer a:hover {
 .topheader { margin-top: 5px; }
 .thead_link { margin: 5px 10px; }
 .t_link { display: inline-block; }
+
+.group h3 { font-size: 16px; font-weight: bold; }
+.group ul li { font-size: 14px; }
+.breadcrumb-item { font-size: 14px; }
+.breadcrumb-item a { color: #666 }
+.group ul { 
+	padding-left: 15px;
+ }
+.group ul a {
+    font-weight: 400;
+    padding: .5em 0;
+    border-top: 1px solid #bbbfc3;
+    display: block;
+    color: #666
+}
+.group li {
+    position: relative;
+    margin-bottom: 3px;
+    /*padding: 5px;*/
+    list-style-type: none;
+   
+}
