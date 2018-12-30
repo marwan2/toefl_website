@@ -1,0 +1,21 @@
+.float-right { float: left !important; }
+.float-left { float: right !important; }
+.pl-0 { padding-left: unset; padding-right: 0 !important; }
+.sform:before { right: 10px; left: unset; }
+.sform input[type="text"] { padding-left: unset; padding-right: 30px; }
+.input-group>.input-group-append>.btn { border-top-right-radius: 0; border-bottom-right-radius: 0; 
+	border-top-left-radius: .25rem; border-bottom-left-radius: .25rem; }
+.navbar-brand { margin-right:0; margin-left: 1rem;  }
+.breadcrumb-item+.breadcrumb-item::before { padding-left: .5rem;  }
+.pr-0 { padding-left: 0 !important; }
+.slide_msg { border-radius: 25px 25px 0px 25px; right: 15%; left: unset; }
+.hp_alert, .main_content { direction: rtl; text-align: right; }
+.test_list { padding-right: 20px; }
+.side_posts { text-align: right; }
+.side_posts .mr-3 { margin-right: unset !important; margin-left: 1rem !important }
+.main_footer .ft-links li { text-align: right; }
+.main_footer .ft_head { text-align: right; }
+.wrap-legal, .wrap-tagline-text, .footer_copyrights { text-align: right; }  
+.main_footer .wrap-legal li:after { margin-right: 10px; margin-left: unset; }
+.main_footer .wrap-legal li { padding-right: 0 }
+.topheader a i { margin-right: unset; margin-left: 3px; }
