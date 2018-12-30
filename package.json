@@ -1,0 +1,14 @@
+{
+  "name": "toefl",
+  "version": "1.0.0",
+  "description": "Toefl alike website",
+  "main": "app.js",
+  "repository": "toefl_website",
+  "author": "Marwan",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4.*",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1"
+  }
+}

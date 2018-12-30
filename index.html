@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Toefl</title>
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link href="node_modules/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<style type="text/css">
+		.head { border-bottom: 10px solid #ea9111 }
+		.subhead { background: #f1f1f1 }
+		main { min-height: 1200px; }
+		.sform:before {
+		    content: "\f002";
+		    font: normal normal normal 14px/1 FontAwesome;
+		    position: absolute;
+		    top: 11px;
+    		left: 12px;
+		    font-size: 100%;
+		    z-index: 88;
+		}
+		.sform { position: relative; }
+		.search_txt { padding-left: 35px; }
+		.subhead a {
+		    color: #151515;
+		    text-decoration: none;
+		    border-bottom: 1px solid transparent;
+		}
+		.subhead a:hover {
+		    text-decoration: none;
+		    border-bottom-color: #151515;
+		}
+		.subhead .breadcrumb {
+			background-color: transparent;
+			margin-bottom: 0;
+		}
+
+		.slide_msg {
+		    background-color: rgba(0,124,146,.85);
+		    max-width: 565px;
+		}
+		.slide_msg {
+		    display: inline-block;
+		    border-radius: 0 25px 25px 25px;
+		    padding: 25px;
+		    max-width: 560px;
+		    color: #fff;
+		    background-color: rgba(0,48,130,.85);
+		    font-weight: 600;
+		    position: absolute;
+		    bottom: 15%;
+		    left: 15%;
+		    z-index: 2;
+		    opacity: .99;
+		}
+		.slide_msg .headline {
+		    font-size: 1.85em;
+		    opacity: .99;
+		}
+		.slide_msg .subtext {
+		    font-size: 1.375em;
+		    opacity: .99;
+		}
+		.hero_action { position: relative; }
+
+		.nav-tabs { border-bottom: 6px solid #003082; border-color: #ea9111;  }
+		.nav-tabs .nav-link { background-color: #007c92; color: #fff; border: none; margin-right: 2px; }
+		.nav-tabs .nav-link.active { background-color: #ea9111; color: #fff; }
+		.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover { border-color: 0 }
+	</style>
+</head>
+<body>
+	<header>
+		<section class="head">
+			<div class="container">
+				<nav class="navbar navbar-expand-sm navbar-light">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarText">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+							  <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i> <span class="label">Store</span></a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" href="#"><i class="fa fa-envelope"></i> <span class="label">Contact Us</span></a>
+							</li>
+							<li class="nav-item">
+							  <form class="form-inline sform">
+							    <div class="input-group">
+							      <input type="text" class="form-control search_txt" placeholder="Search for ..." aria-label="search" aria-describedby="basic-addon1">
+							      <div class="input-group-append">
+							        <button class="btn btn-primary" id="basic-addon1">Search</button>
+							      </div>
+							    </div>
+							  </form>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			  	<nav class="navbar navbar-expand-lg navbar-light">
+				    <a class="navbar-brand" href="#">
+				    	<img src="img/ets_logo.svg" alt="ETS" height="46" width="68">
+				    </a>
+				    <a class="navbar-brand" href="#">
+				    	<img src="img/toefl.svg" alt="ETS" height="46" width="68">
+				    </a>
+			  	</nav>
+			</div>
+		</section>
+
+		<section class="subhead mb-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<nav aria-label="breadcrumb">
+						  <ol class="breadcrumb">
+						    <li class="breadcrumb-item"><a href="#">ETS Home</a></li>
+						    <li class="breadcrumb-item"><a href="#">TOEFL</a></li>
+						  </ol>
+						</nav>
+					</div>
+					<div class="col-md-4">
+						<nav aria-label="breadcrumb">
+						  	<ol class="breadcrumb">
+								<li class="breadcrumb-item">
+									<a href="#"><i class="fa fa-user"></i> <span class="label"> My TOEFL iBT Account</span></a>
+								</li>
+								<li class="breadcrumb-item">
+									<a href="#"><i class="fa fa-globe"></i> <span class="label">Language</span></a>
+								</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+	</header>
+	<main>
+		<div class="container">
+			<div class="wrap-hero mb-3">
+				<div class="hero_action">
+					<div class="slide_img">
+						<img src="img/toefl.jpg" alt="" height="306" class="mw-100">
+					</div>
+					<div class="slide_msg">
+						<div class="headline">Be anything and study anywhere</div>
+						<div class="subtext">with the <span class="text-italic">TOEFL</span><sup>&reg;</sup> test.
+						</div> 
+					</div>
+				</div>
+			</div>
+	      
+	        <ul class="nav nav-tabs mb-3">
+				<li class="nav-item">
+					<a href="#" class="nav-link active">For Test Takers</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">For Institutions</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">For Teachers and Advisors</a>
+				</li>
+			</ul>
+
+			<div class="hp_alert alert alert-warning mb-3">
+				<h3>Important Updates</h3>
+				<p>
+					<a href="#">U.S. ETS Office and Customer Service Winter Holiday Closures</a>
+				</p>
+				<p>
+					<a href="#">ETS and NEEA Start to Map TOEFL® Test Scores to CSE Levels</a>
+				</p>
+			</div>
+
+			<div class="row">
+				<div class="col-md-9">
+					<h1>The TOEFL<sup>&reg;</sup> Test</h1>
+
+					<div class="row">
+						<div class="col-md-6">
+							<p>
+								<strong>
+									The TOEFL<sup>&reg;</sup> Test Gives You an Advantage: Most Widely Accepted, Most Popular and Most Preferred
+								</strong>
+							</p>
+
+							<p>
+								Give yourself the advantage with the TOEFL® test, the leading English-language test for study, immigration and work. TOEFL scores are accepted by more than 10,000 universities and other institutions in over 150 countries, including Australia, Canada, New Zealand, the U.K., the United States, and all across Europe and Asia. Stand out among other applicants and get noticed with the TOEFL test.
+							</p>
+
+							<a href="#" class="btn btn-primary">Register Now</a>
+
+							<ul>
+								<li><a href="#">Who Accepts TOEFL Scores ></a></li>
+								<li><a href="#">Who Accepts TOEFL Scores ></a></li>
+								<li><a href="#">Who Accepts TOEFL Scores ></a></li>
+								<li><a href="#">Who Accepts TOEFL Scores ></a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<h2>TOEFL iBT<sup>&reg;</sup> Test</h2>
+
+							<ul class="test_list">
+								<li><a class="n_link" href="#">About the Test</a></li>
+								<li><a class="n_link" href="#">Register for the Test</a></li>
+								<li><a class="n_link" href="#">Test Centers and Dates</a></li>
+								<li><a class="n_link" href="#">Prepare for the Test</a></li>
+								<li><a class="n_link" href="#">On Test Day</a></li>
+								<li><a class="n_link" href="#">Scores</a></li>
+								<li><a class="n_link" href="#">Frequently Asked Questions</a></li>
+								<li><a class="n_link" href="#">Test Takers with Disabilities and Health-related Needs</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<aside class="col-md-3">
+					fdsjfhkdjsl
+				</aside>
+			</div>
+
+
+
+
+		</div>
+	</main>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
