@@ -2,9 +2,13 @@
 body {
 	font-family: 'Lato', sans-serif;
 }
-
+h1 { font-size: 2.2rem }
+h2 { font-size: 1.514em }
+h3 { font-size: 1.414em }
 .head { border-bottom: 10px solid #ea9111 }
 .subhead { background: #f1f1f1 }
+.text-primary { color: #003082 !important; }
+a { color: #003082 }
 main { min-height: 1200px; }
 .sform:before {
     content: "\f002";
