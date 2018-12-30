@@ -2,195 +2,44 @@
 <html>
 <head>
 	<title>Toefl</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="" />
+	<meta name="keywords" content=" " />
 	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
 	<link href="node_modules/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
 	<link href="css/style.css" type="text/css" rel="stylesheet">
-	<style type="text/css">
-		.head { border-bottom: 10px solid #ea9111 }
-		.subhead { background: #f1f1f1 }
-		main { min-height: 1200px; }
-		.sform:before {
-		    content: "\f002";
-		    font: normal normal normal 14px/1 FontAwesome;
-		    position: absolute;
-		    top: 11px;
-    		left: 12px;
-		    font-size: 100%;
-		    z-index: 88;
-		}
-		.sform { position: relative; }
-		.search_txt { padding-left: 35px; }
-		.subhead a {
-		    color: #151515;
-		    text-decoration: none;
-		    border-bottom: 1px solid transparent;
-		}
-		.subhead a:hover {
-		    text-decoration: none;
-		    border-bottom-color: #151515;
-		}
-		.subhead .breadcrumb {
-			background-color: transparent;
-			margin-bottom: 0;
-		}
 
-		.slide_msg {
-		    background-color: rgba(0,124,146,.85);
-		    max-width: 565px;
-		}
-		.slide_msg {
-		    display: inline-block;
-		    border-radius: 0 25px 25px 25px;
-		    padding: 25px;
-		    max-width: 560px;
-		    color: #fff;
-		    background-color: rgba(0,48,130,.85);
-		    font-weight: 600;
-		    position: absolute;
-		    bottom: 15%;
-		    left: 15%;
-		    z-index: 2;
-		    opacity: .99;
-		}
-		.slide_msg .headline {
-		    font-size: 1.85em;
-		    opacity: .99;
-		}
-		.slide_msg .subtext {
-		    font-size: 1.375em;
-		    opacity: .99;
-		}
-		.hero_action { position: relative; }
-		.nav-tabs { border-bottom: 6px solid #003082; border-color: #ea9111;  }
-		.nav-tabs .nav-link { background-color: #007c92; color: #fff; border: none; margin-right: 2px; }
-		.nav-tabs .nav-link.active { background-color: #ea9111; color: #fff; }
-		.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover { border-color: 0 }
-		.main_footer {
-		    position: relative;
-		    padding: 0 10px 10px;
-		    font-size: 81.25%;
-		    line-height: 1.5;
-		    color: #151515;
-		    background-color: #eaeaea;
-		}
-		.main_footer .wrap-arc {
-		    position: relative;
-		    margin: 0 -10px 10px;
-		    padding-top: 40px;
-		    overflow: hidden;
-		}
-		.main_footer .wrap-arc {
-		    margin-bottom: 0.8em;
-		}
-		.main_footer .wrap-arc svg {
-		    position: absolute;
-		    top: 0;
-		    background-color: #fff;
-		    fill: #eaeaea;
-		}
-		svg:not(:root) {
-		    overflow: hidden;
-		}
-		.wrap-feedback {
-		    background-color: #707070;
-		    border-color: #707070;
-		}
-		.wrap-feedback {
-		    background-color: #ffffff;
-		    border: 1px solid #cccccc;
-		    display: block;
-		    position: fixed;
-		    top: 40%;
-		    padding: 55px 0px 55px 0px;
-		    width: 35px;
-		    z-index: 999995;
-		    cursor: pointer;
-		}
-		footer a {
-		    color: #151515;
-		    text-decoration: none;
-		    border-bottom: 1px solid transparent;
-		}
-		footer a:hover {
-		    text-decoration: none;
-		    border-bottom-color: #151515;
-		}
-		.main_footer .wrap-ets-links li {
-		    line-height: 2.2;
-		}
-		.main_footer .wrap-ets-links ul {
-		    margin: 0;
-		    padding: 0;
-		    list-style-type: none;
-		}
-		.text-bold { font-weight: bold }
-		.main_footer .wrap-legal a {
-		    display: inline-block;
-		    margin: 0;
-		}
-		.main_footer .wrap-legal li {
-		    display: inline-block;
-		    padding: 0.8em;
-		    padding-left: 0;
-		}
-		.main_footer .wrap-legal li:after { 
-			content: "|";
-			margin-left: 10px;
-		}
-
-		.main_footer .wrap-legal ul {
-		    margin: 0;
-		    padding: 0;
-		    list-style-type: none;
-		}
-		.wrap-tagline-text { font-weight: bold; font-size: 16px; }
-		.feedback {
-		    padding: 0;
-		    border: 0;
-		    height: 1px;
-		    width: 1px;
-		    overflow: hidden;
-		}
-		.feed_wrap {
-		    background-repeat: no-repeat;
-		    position: absolute;
-		    display: block;
-		    height: 100%;
-		    left: 0;
-		    top: 0;
-		    width: 100%;
-		}
-	</style>
+	<!-- RTL -->
+	<link href="css/bootstrap-rtl.min.css" type="text/css" rel="stylesheet">
+	<link href="css/rtl.css" type="text/css" rel="stylesheet">	
 </head>
 <body>
 	<header>
 		<section class="head">
 			<div class="container">
-				<nav class="navbar navbar-expand-sm navbar-light">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-					    <span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse d-flex justify-content-end" id="navbarText">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-							  <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i> <span class="label">Store</span></a>
-							</li>
-							<li class="nav-item">
-							  <a class="nav-link" href="#"><i class="fa fa-envelope"></i> <span class="label">Contact Us</span></a>
-							</li>
-							<li class="nav-item">
-							  <form class="form-inline sform">
-							    <div class="input-group">
-							      <input type="text" class="form-control search_txt" placeholder="Search for ..." aria-label="search" aria-describedby="basic-addon1">
-							      <div class="input-group-append">
-							        <button class="btn btn-primary" id="basic-addon1">Search</button>
-							      </div>
-							    </div>
-							  </form>
-							</li>
-						</ul>
+				
+				<div class="topheader float-right">
+					<form class="form-inline sform">
+					    <div class="input-group input-group-sm">
+					      	<input type="text" class="form-control search_txt" placeholder="Search for ..." aria-label="search" aria-describedby="search_head">
+					      	<div class="input-group-append">
+					        	<button class="btn btn-primary" id="search_head">Search</button>
+					      	</div>
+					    </div>
+					</form>
+
+					<div class="t_link">
+						<a class="thead_link" href="#"><i class="fa fa-shopping-cart"></i> <span class="label">Store</span>
+						</a>
 					</div>
-				</nav>
+
+					<div class="t_link">
+						<a class="thead_link" href="#"><i class="fa fa-envelope"></i> <span class="label">Contact Us</span></a>
+					</div>
+				</div>
+
 			  	<nav class="navbar navbar-expand-lg navbar-light">
 				    <a class="navbar-brand" href="#">
 				    	<img src="img/ets_logo.svg" alt="ETS" height="46" width="68">
@@ -215,7 +64,7 @@
 					</div>
 					<div class="col-md-4">
 						<nav aria-label="breadcrumb">
-						  	<ol class="breadcrumb">
+						  	<ol class="breadcrumb float-right">
 								<li class="breadcrumb-item">
 									<a href="#"><i class="fa fa-user"></i> <span class="label"> My TOEFL iBT Account</span></a>
 								</li>
@@ -229,12 +78,13 @@
 			</div>
 		</section>
 	</header>
+
 	<main>
 		<div class="container">
 			<div class="wrap-hero mb-3">
 				<div class="hero_action">
 					<div class="slide_img">
-						<img src="img/toefl.jpg" alt="" height="306" class="mw-100">
+						<img src="img/toefl.jpg" class="mw-100">
 					</div>
 					<div class="slide_msg">
 						<div class="headline">Be anything and study anywhere</div>
@@ -306,7 +156,7 @@
 
 							<h3 class="text-primary"><em>TOEFL</em><sup>&reg;</sup> Paper-delivered Testing</h3>
 
-							<p>In October 2017, we launched the <a href="#" class="lsa-trans">revised <span class="text-italic">TOEFL</span><sup class="reg">&reg;</sup> Paper-delivered Test</a>, a new paper-and-pencil test that is more closely aligned to the <span class="text-italic">TOEFL iBT</span><sup class="reg">&reg;</sup> test.</p>
+							<p>In October 2017, we launched the <a href="#">revised <span class="text-italic">TOEFL</span><sup class="reg">&reg;</sup> Paper-delivered Test</a>, a new paper-and-pencil test that is more closely aligned to the <span class="text-italic">TOEFL iBT</span><sup class="reg">&reg;</sup> test.</p>
 
 
 							<p>The <span class="text-italic">TOEFL</span><sup class="reg">&reg;</sup> PBT test is no longer administered, but your scores are valid for 2 years after your test date. For more information, including how to order additional score reports, see&nbsp;<a href="#"><span class="text-italic">TOEFL</span><sup class="reg">&reg;</sup> PBT test</a>.</p>
@@ -354,19 +204,19 @@
 
 			<div class="container">
 				<div class="text-center mb-4">
-				    <img src="img/ets_logo.svg" alt="ETS" height="46" width="68">
+				    <img src="img/ets_logo.svg" alt="TOEFL" height="46" width="68">
 				</div>
 
 				<div class="row wrap-ets-links">
-					<div class="col">
-						<p class="text-bold"><a class="lsa-trans" href="#">TOEFL Home</a></p>
+					<div class="col-6 col-md-3">
+						<p class="text-bold"><a href="#">TOEFL Home</a></p>
 						<ul>
-							<li><a class="lsa-trans" href="#">For Test Takers</a></li>
-							<li><a class="lsa-notrans" href="#">For Institutions</a></li>
-							<li><a class="lsa-notrans" href="#">For Teachers and Advisors</a></li>
+							<li><a href="#">For Test Takers</a></li>
+							<li><a href="#">For Institutions</a></li>
+							<li><a href="#">For Teachers and Advisors</a></li>
 						</ul>
 					</div>
-					<div class="col">
+					<div class="col-6 col-md-3">
 						<p class="text-bold">ETS</p>
 						<ul>
 							<li><a href="#">About ETS</a></li>
@@ -378,7 +228,7 @@
 							<li><a href="#">Research</a></li>
 						</ul>
 					</div>
-					<div class="col">
+					<div class="col-6 col-md-3">
 						<p class="text-bold">Learning Solutions</p>
 						<ul>
 							<li><a href="#">Educator Licensure</a></li>
@@ -388,7 +238,7 @@
 							<li><a href="#">Workplace &amp; Training</a></li>
 						</ul>
 					</div>
-					<div class="col">
+					<div class="col-6 col-md-3">
 						<p class="text-bold">Products</p>
 						<ul>
 							<li><a href="#">GRE Tests</a></li>
@@ -401,7 +251,6 @@
 					</div>	
 				</div>
 				
-
 				<div class="wrap-legal mt-3">
 					<ul>
 						<li><a href="#">Legal</a></li>
@@ -415,16 +264,15 @@
 					<p>ETS - <span class="text-italic">Measuring the Power of Learning.</span><sup>&copy;</sup></p>
 				</div>
 
-				<div class="wrap-cya">
+				<div class="footer_copyrights">
 					<p>Copyright <span aria-hidden="true">&copy;</span> 2018 by Educational Testing Service. <span class="nowrap">All rights reserved.</span><br>
 					   All trademarks are the property of their respective owners.</p>
 				</div>
 			</div>
 	</footer>
 
-	<div class="wrap-feedback">
-		<a href="#" class="feedback"> Send Feedback</a>
-	</div>
+	<a href="#" class="feedback"> Send Feedback</a>		
+
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
